@@ -26,11 +26,11 @@ public class Point2d{
 		return y;
 	}
 
-	public float distance(Point2d.other){
+	public float distance(Point2d other){
 		float xdiff = other.getX() - getX();
 		float ydiff = other.getY() - getY();
 		float sqrdiff = xdiff*xdiff + ydiff * ydiff;
-		float d = Math.sqrt(sqrdiff);
+		float d = (float) Math.sqrt(sqrdiff);
 		return d;
 	}
 
@@ -42,8 +42,4 @@ public class Point2d{
 		System.out.println(p1.distance(p2));
 
 	}
-
-
-
-
 }
